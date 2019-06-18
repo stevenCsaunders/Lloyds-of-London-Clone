@@ -1,0 +1,202 @@
+/* CSS RESET */
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* SCSS VARIABLES DECLARED HERE */  
+
+
+
+
+/* CSS STYLES FOR PAGE */
+html {
+  font-size: 10px;
+}
+
+body {
+  max-width: 980px;
+  margin: 0 auto;
+ font-family: 'Noto Sans HK', sans-serif;
+}
+
+.top-navigation{
+width: 100%;
+}
+
+.site-header{
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.logo {
+  font-family: 'Libre Baskerville', serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background: black;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: middle;
+  align-items: center;
+  margin-right: 11px;
+  padding: 13px 10px 10px 10px;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-list {
+  display: flex;
+  border-bottom: solid 1px lightgray;
+  font-size: 1.2rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav-item {
+  margin: 10px 0px;
+  border-right: solid 1px lightgray;
+}
+
+.site-nav-item a {
+  padding: 0px 11px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav-item a:hover {
+  text-decoration: underline;
+}
+
+.site-nav-item:last-child {
+  border: none;
+}
+
+.site-search {
+  background: #f1f1f1;
+  display: flex;
+  padding: 0px 10px;
+  border-bottom: solid 1px black;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+input {
+  fill: none;
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.fas {
+  font-size: 1.6rem;
+}
+
+.site-search-item:first-child {
+  color: darkgray;
+}
+
+.site-search-item:last-child {
+  color: black;
+}
+
+.tab-nav {
+  width: 100%;
+  border-top: solid black 1px;
+}
+
+.tab-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-nav-list-item {
+  display: flex;
+  flex-grow: 1;
+  background: #282e54;
+  border-right: white 1px solid;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.tab-nav-list-item:last-child {
+  border: none;
+}
+
+.tab-nav-list-item a {
+  display: inline-block;
+  padding: 13px 30px;
+  color: white;
+  text-decoration: none;
+}
+
+/*---- Hover Styles ----*/
+
+.tab-nav-list-item:hover {
+  background: #f1f1f1;
+}
+.tab-nav-list-item a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/*---- Sudo Active Styling ----*/
+
+.active {
+  background: #dfdfe6;
+}
+
+.active a {
+  color:  #282e54;
+}
