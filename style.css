@@ -57,14 +57,12 @@ html {
 }
 
 body {
-  max-width: 980px;
+  
   margin: 0 auto;
  font-family: 'Noto Sans HK', sans-serif;
 }
 
-.top-navigation{
-width: 100%;
-}
+.site-top
 
 .site-header{
   display: flex;
@@ -190,6 +188,7 @@ input {
   color: black;
   text-decoration: underline;
 }
+/*-----------------------*/
 
 /*---- Sudo Active Styling ----*/
 
@@ -199,4 +198,33 @@ input {
 
 .active a {
   color:  #282e54;
+}
+/*----------------------------*/
+
+.page-title {
+  background: #f1f1f1;
+  padding: 20px 0px;
+  width: 100vw;
+  position: absolute;
+}
+
+.breadcrumb {
+
+}
+
+.breadcrumb-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb-list-item {
+  padding-right: 15px;
+  font-size: 1.4rem;
+  color: #999999;
+}
+
+.breadcrumb-list-item a {
+color: #999999;
+text-decoration: none;
 }
