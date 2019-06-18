@@ -57,12 +57,14 @@ html {
 }
 
 body {
-  
-  margin: 0 auto;
- font-family: 'Noto Sans HK', sans-serif;
+font-family: 'Noto Sans HK', sans-serif;
 }
 
-.site-top
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+
+}
 
 .site-header{
   display: flex;
@@ -205,11 +207,15 @@ input {
   background: #f1f1f1;
   padding: 20px 0px;
   width: 100vw;
-  position: absolute;
+  position: relative;
+  margin: 0 -50vw;
+  left: 50%;
+  right: 50%;
 }
 
 .breadcrumb {
-
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .breadcrumb-list {
