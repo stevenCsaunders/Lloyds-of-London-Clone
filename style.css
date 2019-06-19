@@ -1,6 +1,4 @@
 /* CSS RESET */
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,12 +56,28 @@ html {
 
 body {
 font-family: 'Noto Sans HK', sans-serif;
+margin: 0 20px;
+padding: 0;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .container {
   max-width: 980px;
   margin: 0 auto;
-
 }
 
 .site-header{
@@ -79,7 +93,7 @@ font-family: 'Noto Sans HK', sans-serif;
   color: white;
   text-decoration: none;
   display: flex;
-  justify-content: middle;
+  justify-content: center;
   align-items: center;
   margin-right: 11px;
   padding: 13px 10px 10px 10px;
@@ -137,7 +151,7 @@ input {
 }
 
 .fas {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .site-search-item:first-child {
@@ -154,11 +168,11 @@ input {
 }
 
 .tab-nav-list {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0;
+
 }
 
 .tab-nav-list-item {
@@ -190,6 +204,8 @@ input {
   color: black;
   text-decoration: underline;
 }
+
+
 /*-----------------------*/
 
 /*---- Sudo Active Styling ----*/
@@ -203,9 +219,46 @@ input {
 }
 /*----------------------------*/
 
+/*---- Mega Menu ----*/
+
+.mega-menu-list {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap; 
+  flex
+  width: 980px;
+  top: -9999px;
+  left: 0;
+  padding: 20px;
+  background: #f1f1f1;
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.tab-nav-list-item:first-child:hover ul.mega-menu-list {
+  top: 100%;
+}
+
+.mega-menu-title {
+  border-bottom: solid 1px black;
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+ul.mega-menu-list h4 {
+  color: black;
+  font-weight: 200;
+}
+/*-------------------*/
+
+
+
+
 .page-title {
   background: #f1f1f1;
-  padding: 20px 0px;
+  padding: 30px 0px 20px 0px;
   width: 100vw;
   position: relative;
   margin: 0 -50vw;
@@ -213,9 +266,12 @@ input {
   right: 50%;
 }
 
+.large-title h1 {
+  margin-bottom: 25PX;
+}
+
 .breadcrumb {
-  max-width: 980px;
-  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .breadcrumb-list {
@@ -227,10 +283,137 @@ input {
 .breadcrumb-list-item {
   padding-right: 15px;
   font-size: 1.4rem;
-  color: #999999;
+  color: #979797;
 }
 
 .breadcrumb-list-item a {
-color: #999999;
+color: #979797;
 text-decoration: none;
 }
+
+
+.social-share {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-content: baseline;
+}
+
+.social-share a {
+  color: #1e56b9;
+  text-decoration: none;
+}
+
+.fas.fa-share-alt {
+  margin-right: 15px;
+  margin-left: 15px;
+
+}
+
+.section-intro {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.intro-paragraph p {
+margin-bottom: 15px;
+}
+
+article {
+   margin: 0px 50px 100px 25px;
+}
+
+.report {
+  display: flex;
+}
+.report-image {
+  margin-right: 60px;
+}
+
+.report-description h2 {
+  margin-bottom: 25px;
+}
+
+.report-description p {
+  margin-bottom: 10px;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  color: white;
+  font-size: 1.5rem;
+  background: #1e56b9;
+  padding: 15px 15px;
+  border: none;
+  margin-top: 10px;
+}
+
+footer {
+  background: black;
+  padding: 20px 0px;
+  width: 100vw;
+  position: relative;
+  margin: 0 -50vw;
+  left: 50%;
+  right: 50%;
+}
+
+.footer-nav-list {
+  display: flex;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.footer-nav-list-item {
+  border-right: 1px solid white;
+}
+
+.footer-nav-list-item:last-child {
+  border-right: none;
+}
+
+.footer-nav-list-item a{
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 15px 8px;
+}
+
+.footer-nav-list-item:first-child a {
+  padding-left: 0px;
+}
+
+.social-media-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.fab {
+  font-size: 2.5rem;
+  padding: 0px 8px;
+}
+
+.fa-twitter-square {
+  color: #82c7fd;
+  padding-left: 0;
+}
+
+.fa-linkedin {
+  color: #297dc6;
+}
+
+.fa-facebook-square {
+  color: #1e4892;
+}
+
+.fa-youtube-square {
+  color: #eb423a;
+}
+
+.legal-info p {
+  color: white;
+  margin-bottom: 15px;
+}
+
