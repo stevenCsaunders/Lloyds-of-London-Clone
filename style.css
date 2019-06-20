@@ -247,10 +247,27 @@ input {
   padding-bottom: 20px;
 }
 
-ul.mega-menu-list h4 {
+.mega-menu-list  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mega-menu-list h4 {
   color: black;
   font-weight: 200;
 }
+
+.mega-menu-list-item {
+	flex: 1 0 33.3%;
+  box-sizing: border-box;
+}
+
+.mega-menu-list-item a {
+  color: black;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
 /*-------------------*/
 
 
