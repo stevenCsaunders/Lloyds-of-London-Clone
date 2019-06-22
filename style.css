@@ -58,6 +58,7 @@ body {
 font-family: 'Noto Sans HK', sans-serif;
 margin: 0 20px;
 padding: 0;
+overflow: hidden;
 }
 
 h1 {
@@ -225,7 +226,6 @@ input {
   position: absolute;
   display: flex;
   flex-wrap: wrap; 
-  flex
   width: 980px;
   top: -9999px;
   left: 0;
@@ -236,7 +236,7 @@ input {
   z-index: 1;
 }
 
-.tab-nav-list-item:first-child:hover ul.mega-menu-list {
+.tab-nav-list-item:hover ul.mega-menu-list {
   top: 100%;
 }
 
@@ -258,7 +258,7 @@ input {
 }
 
 .mega-menu-list-item {
-	flex: 1 0 33.3%;
+	flex: 0 0 33.3%;
   box-sizing: border-box;
 }
 
