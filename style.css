@@ -196,12 +196,14 @@ input {
   text-decoration: none;
 }
 
+
 /*---- Hover Styles ----*/
 
 .tab-nav-list-item:hover {
   background: #f1f1f1;
+  color: black;
 }
-.tab-nav-list-item a:hover {
+.tab-nav-list-item:hover a {
   color: black;
   text-decoration: underline;
 }
@@ -363,13 +365,14 @@ article {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button {
+button, button a{
   color: white;
   font-size: 1.5rem;
   background: #1e56b9;
-  padding: 15px 15px;
+  padding: 15px 8px;
   border: none;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 footer {
